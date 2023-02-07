@@ -13,6 +13,5 @@ module "webservers" {
   source = "../../modules/webserver"
 
   container_name = var.container_name
-  nginx_image = var.nginx_image
   http_port = var.http_port
 }

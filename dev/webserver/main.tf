@@ -10,9 +10,12 @@ terraform {
 provider "docker" {}
 
 module "webservers" {
-  source = "../../modules/webserver"
+  source = "./webservers"
+}
+
+module "loadbalancer" {
+  source = "../../modules/loadbalancer"
 
   container_name = var.container_name
-  nginx_image = var.nginx_image
   http_port = var.http_port
 }

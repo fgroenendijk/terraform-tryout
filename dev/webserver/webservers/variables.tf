@@ -7,9 +7,9 @@ variable "nginx_image" {
 }
 
 variable "http_port" {
-  default = 8080
+  default = 8081
 }
 
 variable "container_name" {
-  default = "FlorisLBContainerDev"
+  default = "FlorisContainerDev"
 }
